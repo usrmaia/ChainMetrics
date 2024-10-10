@@ -1,0 +1,4 @@
+[*.cs]
+
+# CS9107: O parâmetro é capturado no estado do tipo delimitador e seu valor também é passado para o construtor base. O valor também pode ser capturado pela classe base.
+dotnet_diagnostic.CS9107.severity = silent
