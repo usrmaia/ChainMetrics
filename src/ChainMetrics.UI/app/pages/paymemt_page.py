@@ -46,7 +46,7 @@ def display_scatter_by_isntallments():
             st.write("Nenhum pagamento encontrado.")
 
         df = pd.DataFrame(payments)
-        fig = px.scatter(
+        fig = px.line(
             df,
             x="quantityInstallments",
             y="averageInstallmentValue",

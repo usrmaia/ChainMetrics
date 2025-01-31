@@ -49,7 +49,7 @@ def display_scatter_by_purchase_date():
             st.write("Nenhum pedido encontrado.")
 
         df = pd.DataFrame(orders)
-        fig = px.scatter(df, x="purchaseDate", y="quantity", title="Quantidade de Pedidos por Data de Compra")
+        fig = px.line(df, x="purchaseDate", y="quantity", title="Quantidade de Pedidos por Data de Compra")
         st.plotly_chart(fig)
 
 
